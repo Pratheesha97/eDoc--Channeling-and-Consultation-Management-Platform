@@ -1,0 +1,11 @@
+.header {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+.bg-dark {
+  background-color: black !important;
+}
+
+.headerZIndex {
+  z-index: 4;
+}

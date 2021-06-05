@@ -1,0 +1,724 @@
+/*--------------------------------------------------------- styles for DoctorNavTab.js------------------------------------------------------------------*/
+
+.doctor-heading {
+  width: 100%;
+  height: 90px !important;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../../guestUserMode/images/Homebackground.jpg);
+}
+
+@media (min-width: 768px) {
+  .MuiTabs-flexContainer {
+    justify-content: center;
+  }
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 130 !important;
+}
+
+/*--------------------------------------------------------- styles for DoctorProfile.js------------------------------------------------------------------*/
+
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+.font-robo {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+/* ==========================================================================
+       #GRID
+       ========================================================================== */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row-space {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.col-2 {
+  width: -webkit-calc((100% - 30px) / 2);
+  width: -moz-calc((100% - 30px) / 2);
+  width: calc((100% - 30px) / 2);
+}
+
+@media (max-width: 767px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+       #BOX-SIZING
+       ========================================================================== */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+       #RESET
+       ========================================================================== */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset {
+  min-width: 0;
+  border: 0;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+/* ==========================================================================
+       #PAGE WRAPPER
+       ========================================================================== */
+.page-wrapper {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+/* ==========================================================================
+       #SPACING
+       ========================================================================== */
+.p-t-100 {
+  padding-top: 100px;
+}
+
+.p-t-130 {
+  padding-top: 130px;
+}
+
+.p-t-180 {
+  padding-top: 180px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-t-15 {
+  padding-top: 15px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-t-50 {
+  padding-top: 50px;
+}
+
+.p-b-50 {
+  padding-bottom: 50px;
+}
+
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+.m-r-45 {
+  margin-right: 45px;
+}
+
+/* ==========================================================================
+       #WRAPPER
+       ========================================================================== */
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper--w960 {
+  max-width: 960px;
+}
+
+.wrapper--w780 {
+  max-width: 780px;
+}
+
+.wrapper--w680 {
+  max-width: 680px;
+  padding-top: 40px;
+}
+
+/* ==========================================================================
+       #BUTTON
+       ========================================================================== */
+
+.btn--green {
+  background: #57b846;
+}
+
+.btn--green:hover {
+  background: #4dae3c;
+}
+
+.btn--blue {
+  background: #3f51b5;
+}
+
+.btn--blue:hover {
+  background: #3868cd;
+}
+
+/* ==========================================================================
+       #FORM
+       ========================================================================== */
+
+label {
+  font-size: 13px;
+  color: #555;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.radio-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: #e5e5e5;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #3f51b5;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #e5e5e5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-group-icon {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  font-size: 18px;
+  color: #999;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+       #TITLE
+       ========================================================================== */
+.title {
+  font-size: 24px;
+  color: #525252;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* ==========================================================================
+       #CARD
+       ========================================================================== */
+.card {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.card-4 {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-4 .card-body {
+  padding: 57px 65px;
+  padding-bottom: 65px;
+}
+
+@media (max-width: 767px) {
+  .card-4 .card-body {
+    padding: 50px 40px;
+  }
+}
+
+/* ==========================================================================
+       #Telephone number hide arrows
+       ========================================================================== */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.change-password-button {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+.change-password-button:focus,
+.change-password-button:active,
+.change-password-button:hover {
+  background-color: #404e9e;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*---------------------------------Profile Pic Start---------------------------------------*/
+.picture-container {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.picture {
+  width: 106px;
+  height: 106px;
+  background-color: #999999;
+  border: 4px solid #cccccc;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: 0px auto;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.picture:hover {
+  border-color: #3f51b5;
+}
+.content.ct-wizard-green .picture:hover {
+  border-color: #05ae0e;
+}
+.content.ct-wizard-blue .picture:hover {
+  border-color: #3f51b5;
+}
+.content.ct-wizard-orange .picture:hover {
+  border-color: #ff9500;
+}
+.content.ct-wizard-red .picture:hover {
+  border-color: #ff3b30;
+}
+.picture input[type="file"] {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.picture-src {
+  width: 100%;
+}
+/*-----------------------------------------------Profile Pic End------------------------------------------*/
+
+/*---------------------------------------------  styles for PrintPrescriptions.js------------------------------------------------------------------*/
+.print-source {
+  display: none;
+  transform: scale(1);
+}
+
+body > .print-source {
+  display: block;
+}
+
+@media print {
+  .print-source {
+    display: block;
+  }
+}
+
+/*---------------------------------------------  styles for CompletedAppointments.js------------------------------------------------------------------*/
+.summary-btn {
+  background-color: #b28704;
+  border-color: #b28704;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.summary-btn:focus,
+.summary-btn:active,
+.summary-btn:hover {
+  background-color: #8a7637;
+  border-color: #b28704;
+  outline: none !important;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15) !important;
+  color: white;
+}
+
+/*---------------------------------------------  styles for DoctorPendingAppoints.js------------------------------------------------------------------*/
+
+#timedate {
+  font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype",
+    "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  border-left: 3px solid #ed1f24;
+  padding: 20px;
+  color: #fff;
+  background-color: #2d2d2d;
+  background: url(../../guestUserMode/images/Homebackground.jpg);
+  box-shadow: 0 3000px rgba(0, 0, 0, 0.75) inset;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15) outset;
+}
+
+/*---------------------------------------------  styles for Overview.js------------------------------------------------------------------*/
+.overview-appointment-count {
+  font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype",
+    "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  width: 600px;
+  background: black;
+  text-align: center;
+  opacity: 0.7;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.overview-notifications {
+  font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype",
+    "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+
+  margin: 0 auto;
+  width: 800px;
+
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(
+    90deg,
+    rgba(65, 130, 129, 1) 6%,
+    rgba(148, 187, 233, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  font-size: 15px;
+}
+
+.slider-container {
+  width: 1200px;
+  height: 460px;
+  margin: 30px auto 0;
+  margin-top: 0px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+
+  /*background-color: rgba(0, 0, 0, 0.6);*/
+}
+
+.image-container {
+  width: 3600px;
+  height: 600px;
+  clear: both;
+  position: absolute;
+  animation-name: slider;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  background-color: #000;
+
+  opacity: 0.6;
+}
+
+.slider-image {
+  width: 1200px;
+  height: 600px;
+  float: left;
+  position: relative;
+}
+
+@keyframes slider {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-1200px, 0);
+  }
+  100% {
+    transform: translate(-2400px, 0);
+  }
+}
+
+.overview-basic-info {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.services-card {
+  position: relative;
+  margin-top: 30px;
+  width: 180px;
+  height: 200px;
+  background: #000;
+  clear: both;
+}
+.services-card .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.services-card .image img {
+  width: 100%;
+  transition: 0.5s;
+}
+.services-card:hover .image img {
+  opacity: 0.5;
+  transform: translateX(30%); /*100%*/
+}
+.services-card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%; /*100%*/
+  height: 100%;
+  /*background: #ffc107;*/
+  background: white;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+}
+.services-card:hover .details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+.services-card .details .center {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.services-card .details .center h1 {
+  margin: 0;
+  padding: 0;
+  color: #ff3636;
+  line-height: 20px;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+.services-card .details .center h1 span {
+  font-size: 8px;
+  color: #262626;
+}
+.services-card .details .center p {
+  padding: 0;
+  color: #262626;
+}
+
+.services-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.services-wrap div {
+  float: left;
+}
+
+#services-wrap:after {
+  display: block;
+  height: 0px;
+  clear: both;
+  float: none;
+}
+
+/*============================= React-Alert TreatmentPlan.js ==========================*/
+.react-confirm-alert-body h1 {
+  font-size: 25px !important;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,1 @@
+web: gunicorn hospitalReservation.wsgi --log-file -
